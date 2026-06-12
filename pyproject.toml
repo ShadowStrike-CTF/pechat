@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pechat"
+version = "1.0.0"
+description = "Namespace placeholder. Active package: pechat-verify"
+readme = "README.md"
+license = {text = "Proprietary"}
+authors = [
+    {name = "Strategos", email = "r@strategos.au"}
+]
+requires-python = ">=3.11"
+keywords = ["forensics", "digital-forensics", "evidence", "hash", "verification"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Other Audience",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[project.urls]
+Homepage = "https://strategos.au"
+Source = "https://github.com/ShadowStrike-CTF/pechat"
