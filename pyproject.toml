@@ -1,26 +1,30 @@
+# © 2026 Strategos Pty Ltd. All rights reserved.
+# Aut Viam Inveniam Aut Faciam
+
 [build-system]
-requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "pechat"
 version = "1.0.0"
-description = "Namespace placeholder. Active package: pechat-verify"
+description = "Forensic tool. by Strategos."
 readme = "README.md"
 license = {text = "Proprietary"}
 authors = [
     {name = "Strategos", email = "r@strategos.au"}
 ]
 requires-python = ">=3.11"
-keywords = ["forensics", "digital-forensics", "evidence", "hash", "verification"]
 classifiers = [
     "Development Status :: 1 - Planning",
-    "Intended Audience :: Other Audience",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.11",
-    "Operating System :: Microsoft :: Windows",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
 ]
 
 [project.urls]
-Homepage = "https://strategos.au"
-Source = "https://github.com/ShadowStrike-CTF/pechat"
+"Source" = "https://github.com/ShadowStrike-CTF/pechat"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pechat"]
